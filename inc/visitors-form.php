@@ -15,5 +15,10 @@ if (isset($msg) && $msg != ""){
     <input type="text" name="name" placeholder="Enter your name">
     <label for="email">Email: </label>
     <input type="email" name="email" placeholder="Enter your email address">
+    <label for="format">Format: </label>
+    <select name="format">
+        <option value="html">html</option>
+        <option value="text">text</option>
+    </select>
     <input type="submit" value="Send">
 </form>

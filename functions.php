@@ -4,7 +4,7 @@ function product_launch_enqueue_style(){
 }
 add_action( 'wp_enqueue_scripts', 'product_launch_enqueue_style' );
 
-function add_visitor($name, $email){
+function add_visitor($name, $email, $format){
     global $wpdb;
     if ($name != "" && $email != "") {
         $visitor = $wpdb->get_results( $wpdb->prepare("SELECT email FROM visitors WHERE email = %s", $email), OBJECT);
@@ -15,7 +15,8 @@ function add_visitor($name, $email){
             	'visitors',
             	array(
             		'name' => $name,
-            		'email' => $email
+            		'email' => $email,
+                    'format' => $format
             	));
             $msg = "Your are now registered.";
         }
