@@ -1,10 +1,10 @@
 <?php
 if (isset($_POST['name']) && isset($_POST['email'])){
-    $msg = add_visitor($_POST['name'], $_POST['email']);
+    $msg = add_visitor($_POST['name'], $_POST['email'], $_POST['format']);
 }
 if (isset($msg) && $msg != ""){
     echo $msg;
-    if ($msg == "Your are now registered.") {
+    if ($msg == get_post_meta(6, 'message', true)) {
         header( "Refresh:2; url=".get_home_url(), true, 303);
     }
 }

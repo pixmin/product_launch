@@ -15,6 +15,7 @@ get_header();
 if (have_posts()):
     while(have_posts()):
         the_post();
+        echo get_the_post_thumbnail() 
 ?>
 <p class="trailer"><?php echo $post->post_content; ?></p>
 <p class="release"><?php echo get_post_meta($post->ID, 'release_date', true); ?></p>
