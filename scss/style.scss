@@ -9,6 +9,36 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: product_launch
 */
 
+*{
+    box-sizing: border-box;
+}
+
 body {
-    background-color: red;
+    main {
+        padding: 1em;
+        width: 50%;
+        margin: 12em auto;
+        box-shadow: 0 0 5px 5px black;
+        text-align: center;
+
+        .release {
+            text-align: center;
+        }
+
+        form {
+            text-align: left;
+            width: 100%;
+            padding: 1em;
+
+            label,
+            input[type="submit"] {
+                display: block;
+                margin: 0.5em auto;
+            }
+
+            input:not([type="submit"]){
+                width: 100%;
+            }
+        }
+    }
 }
