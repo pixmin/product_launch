@@ -62,7 +62,7 @@ function gp_display_visitors() {
     ?>
     <section class="wrap">
         <h2>Product Launch data</h2>
-        <table class="wp-list-table widefat fixed striped posts">
+        <table class="wp-list-table widefat fixed striped posts gp-visitors">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -88,3 +88,10 @@ function gp_display_visitors() {
 
 // Hook up new menu
 add_action('admin_menu', 'gp_visitors_list');
+
+
+// Update CSS within in Admin
+function admin_style() {
+  wp_enqueue_style('admin-styles', get_template_directory_uri().'/admin.css');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
