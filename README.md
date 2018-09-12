@@ -94,7 +94,7 @@ Code review
 
 
 
-## CSS
+## SCSS to CSS
 
 To generate the style.css run: `sass --watch scss:.`
 
@@ -109,4 +109,7 @@ Custom fields > get_post_meta
 get_the_post_thumbnail
 global $wpdb (insert, query, prepqre)
 Add a new table, store and retreive data
-functions.php > add_action add_menu_page
+functions.php
+    add_action add_menu_page
+    add_action('admin_enqueue_scripts', 'xxx');
+    wp_enqueue_style
