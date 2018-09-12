@@ -49,7 +49,7 @@
 
 ## Optional:
     - Add a countdown to the launch date
-    - Add a counter of people already registered
+    - Add a counter of people pre-registered
     - Prepare message when launch date passed
     - Client wants to receive an email when someones leaves his details
 
@@ -94,6 +94,19 @@ Code review
 
 
 
-CSS
+## CSS
 
 To generate the style.css run: `sass --watch scss:.`
+
+
+## Recap
+
+Install Wordpress
+Create a new theme from starter
+Create a new template, for a page, set it as the homepage
+Remove the top toolbar
+Custom fields > get_post_meta
+get_the_post_thumbnail
+global $wpdb (insert, query, prepqre)
+Add a new table, store and retreive data
+functions.php > add_action add_menu_page

@@ -33,8 +33,4 @@ endif;
 
 get_template_part('inc/visitors-form');
 
-global $wpdb;
-$results = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}options WHERE option_id = 1", OBJECT );
-var_dump($results);
-
 get_footer();
