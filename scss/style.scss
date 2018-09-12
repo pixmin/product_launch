@@ -17,8 +17,7 @@ body {
     main {
         padding: 1em;
         width: 50%;
-        margin: 12em auto;
-        box-shadow: 0 0 5px 5px black;
+        margin: 5% auto;
         text-align: center;
 
         .release {
@@ -41,4 +40,8 @@ body {
             }
         }
     }
+}
+
+table.gp-visitors {
+    border: 1px solid #ccc;
 }
